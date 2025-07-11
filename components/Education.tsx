@@ -8,7 +8,7 @@ const educationData = [
     degree: "B.Tech in Computer Science Engineering",
     institution: "IIT Patna",
     year: "2023 - 2027",
-    details: "Relevant coursework: Data Structures, Algorithms, Operating Systems, DBMS. CGPA: 8.5/10.",
+    details: "Relevant coursework: Data Structures & Algorithms, Artificial Intelligence, DBMS. CGPA: 7.59/10.",
     icon: <FaUniversity className="text-3xl text-purple-300 mb-2" />,
   },
   {
