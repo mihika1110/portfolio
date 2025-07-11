@@ -40,10 +40,10 @@ const Home = () => {
         <Coursework />
         <Skills />
         <DownloadResume />
+        <RecentProjects />
         <ProfileSection />
         <PositionOfResponsibilities />
         <LiveStatusBox />
-        <RecentProjects />
         <Clients />
         <Approach />
         <Footer onContactClick={() => setContactOpen(true)} />

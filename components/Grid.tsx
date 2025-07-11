@@ -44,7 +44,7 @@ const Grid = () => {
           initial={{ y: -40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className="rounded-3xl bg-gradient-to-br from-black/80 via-purple-900/60 to-blue-900/60 p-8 flex flex-col justify-center shadow-lg min-h-[22rem]"
+          className="rounded-3xl bg-gradient-to-br from-black/80 via-purple-900/60 to-blue-900/60 p-8 flex flex-col justify-center shadow-lg min-h-[22rem] backdrop-blur-md"
         >
           <h3 className="text-2xl font-bold text-white mb-4">I constantly try to improve</h3>
           <p className="text-lg text-gray-300 mb-6">My tech stack is always evolving. Click the card to see all the technologies I use!</p>
@@ -69,7 +69,7 @@ const Grid = () => {
               {skills.concat(skills).map((skill, idx) => (
                 <span
                   key={idx}
-                  className="px-6 py-2 rounded-full bg-gradient-to-r from-purple-700/70 to-blue-700/70 text-white font-medium shadow-lg border border-purple-400/30 text-base mx-2"
+                  className="px-6 py-2 rounded-full bg-gradient-to-r from-purple-700/70 to-blue-700/70 text-white font-medium shadow-lg border border-purple-400/30 text-base mx-2 backdrop-blur-md"
                 >
                   {skill}
                 </span>
@@ -102,7 +102,7 @@ const Grid = () => {
                 {skills.map((skill, idx) => (
                   <span
                     key={idx}
-                    className="px-6 py-2 rounded-full bg-gradient-to-r from-purple-700/70 to-blue-700/70 text-white font-medium shadow-lg border border-purple-400/30 text-base"
+                    className="px-6 py-2 rounded-full bg-gradient-to-r from-purple-700/70 to-blue-700/70 text-white font-medium shadow-lg border border-purple-400/30 text-base backdrop-blur-md"
                   >
                     {skill}
                   </span>

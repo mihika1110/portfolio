@@ -26,7 +26,7 @@ const Skills = () => (
           whileInView={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.08, boxShadow: "0 0 24px #a78bfa" }}
           transition={{ duration: 0.3, delay: idx * 0.07 }}
-          className="px-6 py-2 rounded-full bg-gradient-to-r from-purple-700/70 to-blue-700/70 text-white font-medium shadow-lg hover:shadow-purple-400/40 transition-all duration-300 border border-purple-400/30"
+          className="px-6 py-2 rounded-full bg-gradient-to-r from-purple-700/70 to-blue-700/70 text-white font-medium shadow-lg hover:shadow-purple-400/40 transition-all duration-300 border border-purple-400/30 backdrop-blur-md"
         >
           {skill}
         </motion.div>

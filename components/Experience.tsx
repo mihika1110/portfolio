@@ -21,7 +21,7 @@ const Experience = () => {
       <h2 className="heading mb-10">Experience</h2>
       <div className="flex flex-col gap-6 w-full max-w-2xl">
         {experienceData.map((exp, idx) => (
-          <div key={idx} className="bg-black/60 border border-gray-700 rounded-xl p-6 shadow-lg">
+          <div key={idx} className="bg-transparent border border-gray-700 rounded-xl p-6 shadow-lg backdrop-blur-md">
             <h3 className="text-xl font-semibold text-white mb-1">{exp.title}</h3>
             <div className="text-gray-400 mb-1">{exp.company} &bull; {exp.year}</div>
             <div className="text-gray-300 text-sm">{exp.description}</div>
