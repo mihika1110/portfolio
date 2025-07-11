@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const positions = [
-  { title: "Web Team Lead", org: "Coding Club, IIT Patna", year: "2023-24", desc: "Led a team of 10+ to build club website and manage events." },
-  { title: "Event Coordinator", org: "TechFest", year: "2022", desc: "Coordinated national-level hackathon with 500+ participants." },
+  { title: "Web Dev Coordinator", org: "HoSCA, IIT Patna", year: "2025-Present", desc: "Led a team of 10+ to build club website and manage events." },
+  { title: "Media & Public Relations Coordinator", org: "Anwesha, IIT Patna", year: "2025-Present", desc: "Coordinated national-level hackathon with 500+ participants." },
+  { title: "Hospitality & Logistics Coordinator", org: "TedxIIT Patna", year: "2025-Present", desc: "Coordinated national-level hackathon with 500+ participants." },
 ];
 
 const PositionOfResponsibilities = () => (
