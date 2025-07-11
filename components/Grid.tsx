@@ -30,7 +30,6 @@ const skills = [
   "Linux",
   "Windows",
   "Git",
-  "Express",
 ];
 
 const Grid = () => {
