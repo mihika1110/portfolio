@@ -5,15 +5,15 @@ import { FaUniversity, FaSchool } from "react-icons/fa";
 
 const educationData = [
   {
-    degree: "B.Tech in Computer Science",
+    degree: "B.Tech in Computer Science Engineering",
     institution: "IIT Patna",
-    year: "2021 - 2025",
+    year: "2023 - 2027",
     details: "Relevant coursework: Data Structures, Algorithms, Operating Systems, DBMS. CGPA: 8.5/10.",
     icon: <FaUniversity className="text-3xl text-purple-300 mb-2" />,
   },
   {
     degree: "High School",
-    institution: "XYZ School",
+    institution: "DAV School",
     year: "2019 - 2021",
     details: "PCM with Computer Science. Percentage: 95%.",
     icon: <FaSchool className="text-3xl text-blue-300 mb-2" />,
