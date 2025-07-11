@@ -39,7 +39,7 @@ const Education = () => {
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.05, boxShadow: "0 0 32px #a78bfa" }}
             transition={{ duration: 0.5, delay: idx * 0.15 }}
-            className={`bg-gradient-to-br from-black/80 via-purple-900/60 to-blue-900/60 border border-purple-500/40 rounded-2xl p-8 shadow-lg hover:shadow-purple-400/60 transition-all duration-300 backdrop-blur-md flex flex-col items-center text-center max-w-md w-full ${idx === 2 ? 'mx-auto md:col-span-2' : ''}`}
+            className={`bg-gradient-to-br from-black/80 via-purple-900/60 to-blue-900/60 border border-purple-500/40 rounded-2xl p-8 shadow-lg hover:shadow-purple-400/60 transition-all duration-300 backdrop-blur-md flex flex-col items-center text-center max-w-md w-full min-h-[260px] mx-auto}`}
           >
             {edu.icon}
             <h3 className="text-xl font-bold text-purple-200 mb-1">{edu.degree}</h3>

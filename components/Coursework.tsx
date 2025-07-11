@@ -4,9 +4,9 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const courses = [
   "Data Structures & Algorithms",
-  "Operating Systems",
+  "Artificial Intelligence",
   "Database Management Systems",
-  "Computer Networks",
+  "Optimization Techniques",
   "Machine Learning",
   "Web Development",
 ];

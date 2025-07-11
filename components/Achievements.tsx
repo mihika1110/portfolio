@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const achievements = [
-  { title: "Winner - Hackathon 2024", description: "Secured 1st place in National Hackathon." },
-  { title: "Top 1% on LeetCode", description: "Ranked in the top 1% globally on LeetCode contests." },
+  { title: "  Inter IIT Cultural Meet Gold Medalist", description: "Secured 1st place in IICM Culinary Club." },
+  { title: "Secured All India Rank(AIR) 5229 in JEE Advanced", description: "Ranked in the top 1% globally on LeetCode contests." },
   { title: "Google Summer of Code", description: "Contributed to open source as a GSoC student." },
 ];
 

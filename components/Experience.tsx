@@ -2,15 +2,15 @@ import React from "react";
 
 const experienceData = [
   {
-    title: "Frontend Engineer Intern",
+    title: "Completed Student Upskilling Launchpad Program by Google",
     company: "Tech Company",
-    year: "May 2023 - July 2023",
+    year: "May 2025",
     description: "Worked on building interactive UI components using React and Tailwind CSS."
   },
   {
-    title: "Mobile App Developer",
+    title: "Completed Graphs Programming Camp organized by AlgoUniversity",
     company: "Startup Inc.",
-    year: "Jan 2023 - Apr 2023",
+    year: "December 2024",
     description: "Developed cross-platform mobile apps with React Native."
   }
 ];
