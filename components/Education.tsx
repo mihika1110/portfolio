@@ -13,9 +13,16 @@ const educationData = [
   },
   {
     degree: "High School",
-    institution: "DAV School",
-    year: "2019 - 2021",
-    details: "PCM with Computer Science. Percentage: 95%.",
+    institution: "DAV School, Lakheri",
+    year: "2019 - 2020",
+    details: "Science, Maths, English, Social Science, Hindi. Percentage: 94.5%.",
+    icon: <FaSchool className="text-3xl text-blue-300 mb-2" />,
+  },
+  {
+    degree: "Higher Secondary School",
+    institution: "DAV School, Lakheri",
+    year: "2021 - 2022",
+    details: "PCM, English, Physical Education. Percentage: 95.8%.",
     icon: <FaSchool className="text-3xl text-blue-300 mb-2" />,
   },
 ];

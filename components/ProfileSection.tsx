@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const profiles = [
-  { name: "Codeforces", url: "https://codeforces.com/profile/yourprofile", icon: "/cf.svg" },
-  { name: "GitHub", url: "https://github.com/yourprofile", icon: "/git.svg" },
+  { name: "Codeforces", url: "https://codeforces.com/profile/mihikas02", icon: "/cf.svg" },
+  { name: "GitHub", url: "https://github.com/mihika1110", icon: "/git.svg" },
   { name: "LeetCode", url: "https://leetcode.com/yourprofile", icon: "/leetcode.svg" },
 ];
 
