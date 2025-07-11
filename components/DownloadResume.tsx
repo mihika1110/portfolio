@@ -6,7 +6,7 @@ import { FaDownload } from "react-icons/fa6";
 const DownloadResume = () => (
   <section id="download-resume" className="w-full py-16 flex flex-col items-center justify-center scroll-mt-24">
     <TextGenerateEffect words="Download Resume" className="text-4xl md:text-5xl text-center mb-8" />
-    <a href="/resume.pdf" download className="w-full flex justify-center">
+    <a href="https://drive.google.com/file/d/1b-3BILsaYPCWQvtkGYqE8sdeKbY48wx9/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="w-full flex justify-center">
       <MagicButton
         title="Download PDF"
         icon={<FaDownload />}

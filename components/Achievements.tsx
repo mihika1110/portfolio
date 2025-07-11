@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const achievements = [
-  { title: "  Inter IIT Cultural Meet Gold Medalist", description: "Secured 1st place in IICM Culinary Club." },
-  { title: "Secured All India Rank(AIR) 5229 in JEE Advanced", description: "Ranked in the top 1% globally on LeetCode contests." },
-  { title: "Google Summer of Code", description: "Contributed to open source as a GSoC student." },
+  { title: " Inter IIT Cultural Meet Gold Medalist", description: "Secured 1st place in IICM Culinary Club." },
+  { title: "Secured All India Rank(AIR) 5229 in JEE Advanced", description: "Ranked in the top 1%." },
+  { title: " Pupil with a rating of 1373 on Codeforces", description: "Solved over 550 problems on Codeforces." },
 ];
 
 const Achievements = () => (
