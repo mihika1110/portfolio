@@ -3,7 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 
-const Footer = () => {
+const Footer = ({ onContactClick }: { onContactClick?: () => void }) => {
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
@@ -24,13 +24,12 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:mihika11saxena@gmail.com">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
+        <MagicButton
+          title="Let's get in touch"
+          icon={<FaLocationArrow />}
+          position="right"
+          handleClick={onContactClick}
+        />
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         {/* Removed copyright line */}

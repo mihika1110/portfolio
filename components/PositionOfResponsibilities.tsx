@@ -13,18 +13,34 @@ const PositionOfResponsibilities = () => (
     <TextGenerateEffect words="Positions of Responsibility" className="text-4xl md:text-5xl text-center mb-10" />
     <div className="grid md:grid-cols-2 gap-8 w-full max-w-4xl">
       {positions.map((pos, idx) => (
-        <motion.div
-          key={idx}
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.05, boxShadow: "0 0 32px #a78bfa" }}
-          transition={{ duration: 0.5, delay: idx * 0.15 }}
-          className="bg-gradient-to-br from-black/80 via-purple-900/60 to-blue-900/60 border border-purple-500/40 rounded-2xl p-6 shadow-lg hover:shadow-purple-400/60 transition-all duration-300 backdrop-blur-md"
-        >
-          <h3 className="text-xl font-bold text-purple-300 mb-1">{pos.title}</h3>
-          <div className="text-gray-400 mb-1">{pos.org} &bull; {pos.year}</div>
-          <p className="text-gray-300 text-sm">{pos.desc}</p>
-        </motion.div>
+        idx === 2 ? (
+          <div className="md:col-span-2 flex justify-center w-full" key={idx}>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.05, boxShadow: "0 0 32px #a78bfa" }}
+              transition={{ duration: 0.5, delay: idx * 0.15 }}
+              className="bg-gradient-to-br from-black/80 via-purple-900/60 to-blue-900/60 border border-purple-500/40 rounded-2xl p-6 shadow-lg hover:shadow-purple-400/60 transition-all duration-300 backdrop-blur-md w-full max-w-md"
+            >
+              <h3 className="text-xl font-bold text-purple-300 mb-1">{pos.title}</h3>
+              <div className="text-gray-400 mb-1">{pos.org} &bull; {pos.year}</div>
+              <p className="text-gray-300 text-sm">{pos.desc}</p>
+            </motion.div>
+          </div>
+        ) : (
+          <motion.div
+            key={idx}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.05, boxShadow: "0 0 32px #a78bfa" }}
+            transition={{ duration: 0.5, delay: idx * 0.15 }}
+            className="bg-gradient-to-br from-black/80 via-purple-900/60 to-blue-900/60 border border-purple-500/40 rounded-2xl p-6 shadow-lg hover:shadow-purple-400/60 transition-all duration-300 backdrop-blur-md"
+          >
+            <h3 className="text-xl font-bold text-purple-300 mb-1">{pos.title}</h3>
+            <div className="text-gray-400 mb-1">{pos.org} &bull; {pos.year}</div>
+            <p className="text-gray-300 text-sm">{pos.desc}</p>
+          </motion.div>
+        )
       ))}
     </div>
   </section>
