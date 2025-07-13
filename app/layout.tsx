@@ -31,6 +31,123 @@ export default function RootLayout({
           {/* Square grid background */}
           <div className="absolute inset-0 w-full h-full opacity-10 animate-[moveGrid_60s_linear_infinite] bg-[url('/footer-grid.svg')] bg-repeat" style={{ backgroundSize: '60px 60px' }} />
           
+          {/* Global Lightning Strike Effects */}
+          <div className="absolute inset-0 overflow-hidden">
+            {[...Array(15)].map((_, i) => {
+              // More varied and interesting starting positions
+              const positionType = i % 12; // 12 different position types
+              let startX, startY, angle;
+              
+              switch(positionType) {
+                case 0: // Top-left corner
+                  startX = '20px';
+                  startY = '20px';
+                  angle = 45;
+                  break;
+                case 1: // Top-right corner
+                  startX = 'calc(100% - 70px)';
+                  startY = '20px';
+                  angle = 135;
+                  break;
+                case 2: // Bottom-left corner
+                  startX = '20px';
+                  startY = 'calc(100% - 70px)';
+                  angle = -45;
+                  break;
+                case 3: // Bottom-right corner
+                  startX = 'calc(100% - 70px)';
+                  startY = 'calc(100% - 70px)';
+                  angle = -135;
+                  break;
+                case 4: // Top center
+                  startX = '50%';
+                  startY = '30px';
+                  angle = 90 + (Math.random() - 0.5) * 20;
+                  break;
+                case 5: // Bottom center
+                  startX = '50%';
+                  startY = 'calc(100% - 70px)';
+                  angle = -90 + (Math.random() - 0.5) * 20;
+                  break;
+                case 6: // Left center
+                  startX = '30px';
+                  startY = '50%';
+                  angle = 0 + (Math.random() - 0.5) * 20;
+                  break;
+                case 7: // Right center
+                  startX = 'calc(100% - 70px)';
+                  startY = '50%';
+                  angle = 180 + (Math.random() - 0.5) * 20;
+                  break;
+                case 8: // Top quarter positions
+                  startX = `${25 + Math.random() * 50}%`;
+                  startY = '40px';
+                  angle = 90 + (Math.random() - 0.5) * 30;
+                  break;
+                case 9: // Bottom quarter positions
+                  startX = `${25 + Math.random() * 50}%`;
+                  startY = 'calc(100% - 80px)';
+                  angle = -90 + (Math.random() - 0.5) * 30;
+                  break;
+                case 10: // Left quarter positions
+                  startX = '40px';
+                  startY = `${25 + Math.random() * 50}%`;
+                  angle = 0 + (Math.random() - 0.5) * 30;
+                  break;
+                case 11: // Right quarter positions
+                  startX = 'calc(100% - 80px)';
+                  startY = `${25 + Math.random() * 50}%`;
+                  angle = 180 + (Math.random() - 0.5) * 30;
+                  break;
+                default:
+                  startX = '20px';
+                  startY = '20px';
+                  angle = 45;
+              }
+              
+              // Add some random variation to the angle
+              const angleVariation = (Math.random() - 0.5) * 15; // ±7.5 degrees variation
+              const finalAngle = angle + angleVariation;
+              
+              const colors = [
+                'rgba(34,211,238,0.9)', // Bright cyan
+                'rgba(147,51,234,0.8)', // Bright purple
+                'rgba(59,130,246,0.8)', // Bright blue
+                'rgba(236,72,153,0.8)', // Bright pink
+                'rgba(16,185,129,0.8)', // Bright green
+                'rgba(245,158,11,0.8)', // Bright orange
+              ];
+              const color = colors[i % colors.length];
+              
+              return (
+                <div
+                  key={`lightning-${i}`}
+                  className="absolute animate-lightning-strike"
+                  style={{
+                    left: startX,
+                    top: startY,
+                    width: '8px', // Increased width
+                    height: '400px', // Increased height for longer travel
+                    background: `linear-gradient(45deg, ${color} 0%, ${color.replace('0.9', '0.7').replace('0.8', '0.6')} 20%, ${color.replace('0.9', '0.4').replace('0.8', '0.3')} 50%, ${color.replace('0.9', '0.2').replace('0.8', '0.1')} 80%, transparent 100%)`,
+                    transform: `rotate(${finalAngle}deg)`,
+                    filter: `blur(${Math.random() * 3 + 2}px)`, // Increased blur
+                    animationDelay: `${Math.random() * 15 + 5}s`, // Increased delays
+                    animationDuration: `${6 + Math.random() * 4}s`, // Much slower animation
+                    opacity: 0,
+                    transformOrigin: 'top center',
+                    '--start-x': startX,
+                    '--start-y': startY,
+                    '--angle': `${finalAngle}deg`,
+                  } as React.CSSProperties & { 
+                    '--start-x': string;
+                    '--start-y': string;
+                    '--angle': string;
+                  }}
+                />
+              );
+            })}
+          </div>
+          
           {/* Enhanced moving stars with varied animations */}
           <div className="absolute inset-0">
             {[...Array(80)].map((_, i) => {

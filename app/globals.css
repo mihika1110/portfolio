@@ -273,6 +273,77 @@
   }
 }
 
+@keyframes comet-streak {
+  0% {
+    transform: translateY(-100px) rotate(var(--rotation, 0deg)) scale(0.5);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(400px) rotate(var(--rotation, 0deg)) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes lightning-strike {
+  0% {
+    transform: translate(var(--start-x), var(--start-y)) rotate(var(--angle)) scaleY(0.1);
+    opacity: 0;
+    filter: blur(4px) brightness(0.8);
+    transform-origin: top center;
+  }
+
+  10% {
+    opacity: 0.6;
+    filter: blur(3px) brightness(1.2);
+    transform: translate(var(--start-x), var(--start-y)) rotate(var(--angle)) scaleY(0.3);
+  }
+
+  25% {
+    opacity: 1;
+    filter: blur(2px) brightness(1.6);
+    transform: translate(var(--start-x), var(--start-y)) rotate(var(--angle)) scaleY(0.6);
+  }
+
+  40% {
+    opacity: 1;
+    filter: blur(1.5px) brightness(2);
+    transform: translate(var(--start-x), var(--start-y)) rotate(var(--angle)) scaleY(0.8);
+  }
+
+  55% {
+    opacity: 0.9;
+    filter: blur(2px) brightness(1.8);
+    transform: translate(var(--start-x), var(--start-y)) rotate(var(--angle)) scaleY(1);
+  }
+
+  70% {
+    opacity: 0.7;
+    filter: blur(2.5px) brightness(1.4);
+    transform: translate(var(--start-x), var(--start-y)) rotate(var(--angle)) scaleY(1.2);
+  }
+
+  85% {
+    opacity: 0.4;
+    filter: blur(3px) brightness(1.1);
+    transform: translate(var(--start-x), var(--start-y)) rotate(var(--angle)) scaleY(1.4);
+  }
+
+  100% {
+    transform: translate(var(--start-x), var(--start-y)) rotate(var(--angle)) scaleY(1.6);
+    opacity: 0;
+    filter: blur(4px) brightness(0.6);
+  }
+}
+
 .animate-float1 {
   animation: float1 12s ease-in-out infinite;
 }
@@ -316,4 +387,14 @@
 
 .animate-glow-breathe {
   animation: glow-breathe 6s ease-in-out infinite;
+}
+
+.animate-comet-streak {
+  animation: comet-streak 5s ease-out infinite;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-lightning-strike {
+  animation: lightning-strike 10s ease-in-out infinite;
+  animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
 }
