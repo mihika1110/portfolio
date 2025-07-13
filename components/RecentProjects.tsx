@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow, FaGithub, FaPlay } from "react-icons/fa";
 import { projects } from "@/data";
 
 const RecentProjects = () => {
@@ -49,14 +49,24 @@ const RecentProjects = () => {
               </div>
               <div className="flex justify-between items-center mt-2">
                 <a
-                  href={item.link && item.link !== "#" ? item.link : undefined}
+                  href={item.githubLink && item.githubLink !== "#" ? item.githubLink : undefined}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center lg:text-xl md:text-xs text-sm text-purple px-3 py-1 rounded hover:bg-purple-900/30 transition"
                   onClick={e => e.stopPropagation()}
                 >
-                  Check Live Site
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  <FaGithub className="me-2" />
+                  GitHub
+                </a>
+                <a
+                  href={item.demoVideo && item.demoVideo !== "#" ? item.demoVideo : undefined}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center lg:text-xl md:text-xs text-sm text-purple px-3 py-1 rounded hover:bg-purple-900/30 transition"
+                  onClick={e => e.stopPropagation()}
+                >
+                  <FaPlay className="me-2" />
+                  Demo
                 </a>
               </div>
             </div>
@@ -72,12 +82,12 @@ const RecentProjects = () => {
             onClick={() => setOpenId(null)}
           />
           {/* Modal content */}
-          <div className="relative z-10 bg-gradient-to-br from-black/90 via-purple-900/80 to-blue-900/80 rounded-3xl p-10 shadow-2xl max-w-lg w-[90vw] flex flex-col items-center border border-purple-400/30 animate-fadeIn">
+          <div className="relative z-10 bg-gradient-to-br from-black/90 via-purple-900/80 to-blue-900/80 rounded-3xl p-10 shadow-2xl max-w-4xl w-[95vw] flex flex-col items-center border border-purple-400/30 animate-fadeIn h-[80vh] overflow-y-auto">
             <img src={openProject.img} alt="cover" className="w-32 h-32 object-contain mb-4 rounded-2xl border border-white/10" />
             <h2 className="text-2xl font-bold text-purple mb-4 text-center">{openProject.title}</h2>
             <p className="text-base text-[#BEC1DD] mb-4 text-center">{openProject.des}</p>
             <p className="text-sm text-blue-200 mb-4 text-center">{openProject.details}</p>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-6">
               {openProject.iconLists.map((icon, index) => (
                 <div
                   key={index}
@@ -87,15 +97,28 @@ const RecentProjects = () => {
                 </div>
               ))}
             </div>
-            <a
-              href={openProject.link && openProject.link !== "#" ? openProject.link : undefined}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 px-6 py-2 rounded-lg bg-purple-700 text-white hover:bg-purple-800 transition mb-2"
-              onClick={e => e.stopPropagation()}
-            >
-              Check Live Site <FaLocationArrow />
-            </a>
+            <div className="flex gap-4 mb-4">
+              <a
+                href={openProject.githubLink && openProject.githubLink !== "#" ? openProject.githubLink : undefined}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-6 py-2 rounded-lg bg-purple-700 text-white hover:bg-purple-800 transition"
+                onClick={e => e.stopPropagation()}
+              >
+                <FaGithub />
+                GitHub
+              </a>
+              <a
+                href={openProject.demoVideo && openProject.demoVideo !== "#" ? openProject.demoVideo : undefined}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-6 py-2 rounded-lg bg-blue-700 text-white hover:bg-blue-800 transition"
+                onClick={e => e.stopPropagation()}
+              >
+                <FaPlay />
+                Demo Video
+              </a>
+            </div>
             <button
               className="mt-2 px-6 py-2 rounded-lg bg-gray-800 text-white hover:bg-gray-700 transition"
               onClick={e => { e.stopPropagation(); setOpenId(null); }}

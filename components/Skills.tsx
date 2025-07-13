@@ -3,13 +3,41 @@ import { motion } from "framer-motion";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const skills = [
+  // Programming Languages
+  "C++",
+  "C",
+  "Python",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "SQL",
+  "Kotlin",
+  "Verilog",
+  "TypeScript",
+  
+  // Frameworks and IDEs
   "React",
   "Next.js",
-  "TypeScript",
-  "Tailwind CSS",
   "Node.js",
-  "Python",
-  "C++",
+  "Android Studio",
+  
+  // Design and Productivity Tools
+  "Adobe Photoshop",
+  "Canva",
+  "Figma",
+  "LaTeX",
+  "Overleaf",
+  "Microsoft Teams",
+  "Zoom",
+  
+  // Platforms and Operating Systems
+  "Linux",
+  "Windows",
+  "Web",
+  "Arduino",
+  
+  // Additional Technologies
+  "Tailwind CSS",
   "Framer Motion",
   "Three.js",
   "Git",
