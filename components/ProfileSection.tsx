@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const profiles = [
-  { name: "Codeforces", url: "https://codeforces.com/profile/mihikas02", icon: "/cf.svg" },
+  { name: "Codeforces", url: "https://codeforces.com/profile/mihikas02", icon: "/codeforces.png" },
   { name: "GitHub", url: "https://github.com/mihika1110", icon: "/git.svg" },
-  { name: "LeetCode", url: "https://leetcode.com/yourprofile", icon: "/leetcode.svg" },
+  { name: "LeetCode", url: "https://leetcode.com/u/mihikasaxena/", icon: "/leetcode.png" },
 ];
 
 const ProfileSection = () => (
