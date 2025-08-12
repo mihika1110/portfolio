@@ -17,6 +17,7 @@ const skills = [
   "Javascript",
   "SQL",
   "Kotlin",
+  "MATLAB",
   "Verilog",
   "Android Studio",
   "Adobe Photoshop",
