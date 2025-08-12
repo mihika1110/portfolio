@@ -127,6 +127,28 @@ export const projects = [
     demoVideo: "#",
     githubLink: "#",
   },
+    {
+    id: 6,
+    title: "Suika AI (AI-Powered Puzzle Game) (March '25)",
+    des: "Developed an automated version of the Suika Game (Japanese puzzle) using reinforcement learning (Q-learning) to optimize fruit-merging strategies. Engineered physics-based interactions (Pymunk) for realistic collisions and gravity simulation, and built a dynamic GUI (Pyglet) with real-time previews and score tracking. Collaborated in a 5-member team to integrate AI logic with game mechanics.",
+    details: `Tech: Python, Pymunk, Pyglet, Reinforcement Learning (Q-learning), Game Development`,
+    img: "/p2.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    link: "#",
+    demoVideo: "#",
+    githubLink: "#",
+  },
+      {
+    id: 7,
+    title: "Suika AI (AI-Powered Puzzle Game) (March '25)",
+    des: "Developed an automated version of the Suika Game (Japanese puzzle) using reinforcement learning (Q-learning) to optimize fruit-merging strategies. Engineered physics-based interactions (Pymunk) for realistic collisions and gravity simulation, and built a dynamic GUI (Pyglet) with real-time previews and score tracking. Collaborated in a 5-member team to integrate AI logic with game mechanics.",
+    details: `Tech: Python, Pymunk, Pyglet, Reinforcement Learning (Q-learning), Game Development`,
+    img: "/p2.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    link: "#",
+    demoVideo: "#",
+    githubLink: "#",
+  },
 ];
 
 export const testimonials = [
