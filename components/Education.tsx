@@ -11,20 +11,34 @@ const educationData = [
     details: "Relevant coursework: Data Structures & Algorithms, Artificial Intelligence, DBMS. CGPA: 7.59/10.",
     icon: <FaUniversity className="text-3xl text-purple-300 mb-2" />,
   },
+
   {
-    degree: "High School",
-    institution: "DAV School, Lakheri",
-    year: "2019 - 2020",
-    details: "Science, Maths, English, Social Science, Hindi. Percentage: 94.5%.",
-    icon: <FaSchool className="text-3xl text-blue-300 mb-2" />,
-  },
-  {
-    degree: "Higher Secondary School",
-    institution: "DAV School, Lakheri",
-    year: "2021 - 2022",
-    details: "PCM, English, Physical Education. Percentage: 95.8%.",
-    icon: <FaSchool className="text-3xl text-blue-300 mb-2" />,
-  },
+  degree: "High School",
+  institution: "DAV School, Lakheri",
+  year: "2019 - 2020",
+  details: (
+    <>
+      Science, Maths, English, Social Science, Hindi.
+      <br />
+      Percentage: 94.5%.
+    </>
+  ),
+  icon: <FaSchool className="text-3xl text-blue-300 mb-2" />,
+},
+
+{
+  degree: "Higher Secondary School",
+  institution: "DAV School, Lakheri",
+  year: "2021 - 2022",
+  details: (
+    <>
+      PCM, English, Physical Education.
+      <br />
+      Percentage: 95.8%.
+    </>
+  ),
+  icon: <FaSchool className="text-3xl text-blue-300 mb-2" />,
+},
 ];
 
 const Education = () => {
