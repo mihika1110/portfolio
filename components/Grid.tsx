@@ -23,7 +23,7 @@ const skills = [
   "Adobe Photoshop",
   "Canva",
   "Figma",
-  "FLaTeX",
+  "LaTeX",
   "Overleaf",
   "Node.js",
   "Microsoft Teams",

@@ -14,6 +14,7 @@ const skills = [
   "Kotlin",
   "Verilog",
   "TypeScript",
+  "MATLAB",
   
   // Frameworks and IDEs
   "React",

@@ -3,15 +3,15 @@ import React from "react";
 const experienceData = [
   {
     title: "Completed Student Upskilling Launchpad Program by Google",
-    company: "Tech Company",
+    company: "Google",
     year: "May 2025",
-    description: "Worked on building interactive UI components using React and Tailwind CSS."
+    description: "Completed the Google India Student Upskilling Launchpad Program, enhancing technical skills, DSA knowledge, and interview preparation through hands-on learning and mentorship by Googlers."
   },
   {
     title: "Completed Graphs Programming Camp organized by AlgoUniversity",
-    company: "Startup Inc.",
+    company: "Algo University",
     year: "December 2024",
-    description: "Developed cross-platform mobile apps with React Native."
+    description: "Completed a Graphs Programming Camp led by the CEO of AlgoUniversity, focusing on advanced graph algorithms, problem-solving strategies, and shortcuts."
   }
 ];
 

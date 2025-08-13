@@ -9,6 +9,9 @@ const courses = [
   "Optimization Techniques",
   "Machine Learning",
   "Web Development",
+  "Operating System ",
+  "Computer Network ",
+  "Programming and Data Structures",
 ];
 
 const Coursework = () => (
