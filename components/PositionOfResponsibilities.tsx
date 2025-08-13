@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const positions = [
-  { title: "Web Dev Coordinator", org: "HoSCA, IIT Patna", year: "2025-Present", desc: "Led a team of 10+ to build club website and manage events." },
-  { title: "Media & Public Relations Coordinator", org: "Anwesha, IIT Patna", year: "2025-Present", desc: "Coordinated national-level hackathon with 500+ participants." },
-  { title: "Hospitality & Logistics Coordinator", org: "TedxIIT Patna", year: "2025-Present", desc: "Coordinated national-level hackathon with 500+ participants." },
+  { title: "Web Dev Coordinator", org: "HoSCA, IIT Patna", year: "2025-Present", desc: "Contributed to the development of a centralized website that serves as a hub for all IIT Patna clubs, showcasing their activities, events, and members for better user engagement." },
+  { title: "Media & Public Relations Coordinator", org: "Anwesha, IIT Patna", year: "2025-Present", desc: "Oversee media coverage and public relations for Anwesha, IIT Patna’s annual cultural festival. Responsible for drafting press releases, building relationships with media outlets, promoting events via social media, and ensuring maximum visibility through interviews, coverage, and strategic campaigns." },
+  { title: "Hospitality & Logistics Coordinator", org: "TedxIIT Patna", year: "2025-Present", desc: "CEnsured a safe and seamless experience for guest speakers at TEDx IIT Patna by managing travel arrangements, accommodation, and on-site logistics, ensuring that all requirements were met for a smooth event experience." },
 ];
 
 const PositionOfResponsibilities = () => (
