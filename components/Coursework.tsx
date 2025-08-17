@@ -16,7 +16,7 @@ const courses = [
 
 const Coursework = () => (
   <section id="coursework" className="w-full py-16 flex flex-col items-center justify-center scroll-mt-24">
-    <TextGenerateEffect words="Relevant Coursework" className="text-4xl md:text-5xl text-center mb-10" />
+    <TextGenerateEffect words="Relevant Courseworks" className="text-4xl md:text-5xl text-center mb-10" />
     <div className="grid md:grid-cols-3 gap-8 w-full max-w-5xl">
       {courses.map((course, idx) => (
         <motion.div
