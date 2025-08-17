@@ -81,7 +81,7 @@ export const projects = [
     iconLists: ["/c.svg", "/fm.svg", "/git.svg"],
     link: "#",
     demoVideo: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/mihika1110/SaveSmartIT.git",
   },
   {
     id: 2,
@@ -92,7 +92,7 @@ export const projects = [
     iconLists: ["/git.svg", "/fm.svg", "/c.svg"],
     link: "#",
     demoVideo: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/mihika1110/DBMSIndianRailwayTicketRailwaySystem.git",
   },
   {
     id: 3,
@@ -103,7 +103,7 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
     link: "#",
     demoVideo: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/mihika1110/SuikaAI.git",
   },
   {
     id: 4,
@@ -114,7 +114,7 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
     link: "#",
     demoVideo: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/mihika1110/CodeCraft-Assistant-Crisil.git",
   },
   {
     id: 5,
@@ -125,7 +125,7 @@ export const projects = [
     iconLists: ["/c.svg", "/git.svg"],
     link: "#",
     demoVideo: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/mihika1110/LibraryManagementSystem.git",
   },
     {
     id: 6,
