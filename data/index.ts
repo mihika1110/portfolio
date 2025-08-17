@@ -252,13 +252,20 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    url: "https://github.com/mihika1110",
   },
+  // {
+  //   id: 2,
+  //   img: "/twit.svg",
+  // },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/link.svg",
+    url: "https://www.linkedin.com/in/mihika-saxena-b5bb8a28b/",
   },
   {
     id: 3,
     img: "/link.svg",
+    url: "mihika11saxena@gmail.com",
   },
 ];

@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const statuses = [
-  { label: "Currently Learning", value: "Advanced React & Animation" },
-  { label: "Looking For", value: "Exciting Internship Opportunities", hasBlinkingDot: true },
+  { label: "Currently Learning", value: "Operating System and Computer Network" },
+  { label: "Looking For", value: "6 Months Internship Opportunities", hasBlinkingDot: true },
 ];
 
 const LiveStatusBox = () => (
