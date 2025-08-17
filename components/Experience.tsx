@@ -9,7 +9,7 @@ const experienceData = [
   },
   {
     title: "Completed Graphs Programming Camp organized by AlgoUniversity",
-    company: "Algo University",
+    company: "AlgoUniversity",
     year: "December 2024",
     description: "Completed a Graphs Programming Camp led by the CEO of AlgoUniversity, focusing on advanced graph algorithms, problem-solving strategies, and shortcuts."
   }
