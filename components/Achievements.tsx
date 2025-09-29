@@ -4,7 +4,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const achievements = [
   { title: " Inter IIT Cultural Meet Gold Medalist", description: "Secured 1st place in IICM Culinary Club." },
-  { title: "Secured All India Rank(AIR) 5229 in JEE Advanced", description: "Ranked in the top 1%." },
+  { title: "Secured All India Rank(AIR) 5229 in JEE Advanced", description: "Ranked in the top 3%." },
   { title: " Pupil with a rating of 1373 on Codeforces", description: "Solved over 550 problems on Codeforces." },
 ];
 
