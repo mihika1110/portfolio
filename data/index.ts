@@ -74,28 +74,42 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title:
+      "Renewable Energy Production Prediction using Hybrid Machine Learning Models (Ongoing)",
+    des: "Developing a hybrid CNN-LSTM model to forecast solar and wind power generation using historical meteorological data. Implementing data preprocessing, feature engineering, and model training pipelines while benchmarking performance against models like XGBoost and Random Forest. Building a scalable framework to enhance prediction accuracy and support grid stability for renewable energy systems.",
+    details: `Tech: Python, TensorFlow, Scikit-learn, Pandas, NumPy & Git`,
+    img: "./renewable_energy.png",
+    iconLists: ["/c.svg", "/fm.svg", "/git.svg"],
+    link: "#",
+    demoVideo: "#",
+    githubLink:
+      "https://github.com/mihika1110/Renewable-Energy-Production-Prediction-using-Hybrid-Machine-Learning-Models.git",
+  },
+  {
+    id: 2,
     title: "SaveSmart – Expense Tracker App (Ongoing)",
     des: "Developing a full-stack expense tracking application to help users manage their finances efficiently. Features include secure login/signup, currency selection, transaction logging, income-expense management, detailed budgeting, customizable user profile, dark theme support, security settings, theme customization, help support, and a scalable backend for secure data storage and efficient transaction management.",
     details: `Tech: Android Studio, Kotlin, Firebase, Jetpack Compose & Figma`,
-    img: "/b5.svg",
+    img: "/save_smart.png",
     iconLists: ["/c.svg", "/fm.svg", "/git.svg"],
     link: "#",
     demoVideo: "#",
     githubLink: "https://github.com/mihika1110/SaveSmartIT.git",
   },
   {
-    id: 2,
+    id: 3,
     title: "Indian Railway Ticket Reservation System (April'25)",
     des: "Designed and implemented a relational database for a railway reservation system with PNR tracking, waitlist management, multi-class booking, refund processing, ER diagram, normalized schemas, complex SQL queries, procedures, triggers, and indexing for optimized performance. Supported real-world constraints including seat availability, concessions, and cancellation workflows.",
     details: `Tech: MySQL, SQL, Database Design & Figma/Canva`,
-    img: "/p1.svg",
+    img: "/dbms_railway.png",
     iconLists: ["/git.svg", "/fm.svg", "/c.svg"],
     link: "#",
     demoVideo: "#",
-    githubLink: "https://github.com/mihika1110/DBMSIndianRailwayTicketRailwaySystem.git",
+    githubLink:
+      "https://github.com/mihika1110/DBMSIndianRailwayTicketRailwaySystem.git",
   },
   {
-    id: 3,
+    id: 4,
     title: "Suika AI (AI-Powered Puzzle Game) (March '25)",
     des: "Developed an automated version of the Suika Game (Japanese puzzle) using reinforcement learning (Q-learning) to optimize fruit-merging strategies. Engineered physics-based interactions (Pymunk) for realistic collisions and gravity simulation, and built a dynamic GUI (Pyglet) with real-time previews and score tracking. Collaborated in a 5-member team to integrate AI logic with game mechanics.",
     details: `Tech: Python, Pymunk, Pyglet, Reinforcement Learning (Q-learning), Game Development`,
@@ -106,8 +120,9 @@ export const projects = [
     githubLink: "https://github.com/mihika1110/SuikaAI.git",
   },
   {
-    id: 4,
-    title: "CodeCraft Assistant (AI-Driven Game Development) (CRISIL Build.Disrupt.Win Hackathon, Feb '25)",
+    id: 5,
+    title:
+      "CodeCraft Assistant (AI-Driven Game Development) (CRISIL Build.Disrupt.Win Hackathon, Feb '25)",
     des: "Developing an AI-powered software solution to automate app development, enabling rapid creation of business-specific applications. Integrating privacy and security features through NLP, LLM, and open-source technologies. Building an autonomous agent for end-to-end development, from coding to testing, including automated test case generation, execution, and feedback.",
     details: `Tech: React, JavaScript, Python, PyTorch, Figma, Vercel & VS Code`,
     img: "/p3.svg",
@@ -117,7 +132,7 @@ export const projects = [
     githubLink: "https://github.com/mihika1110/CodeCraft-Assistant-Crisil.git",
   },
   {
-    id: 5,
+    id: 6,
     title: "Library Management System (March '24)",
     des: "Developed a program with features like authentication (user login, register), issue book, return book, show available books.",
     details: `Tech: C & VS Code`,
@@ -127,8 +142,8 @@ export const projects = [
     demoVideo: "#",
     githubLink: "https://github.com/mihika1110/LibraryManagementSystem.git",
   },
-    {
-    id: 6,
+  {
+    id: 7,
     title: "Suika AI (AI-Powered Puzzle Game) (March '25)",
     des: "Developed an automated version of the Suika Game (Japanese puzzle) using reinforcement learning (Q-learning) to optimize fruit-merging strategies. Engineered physics-based interactions (Pymunk) for realistic collisions and gravity simulation, and built a dynamic GUI (Pyglet) with real-time previews and score tracking. Collaborated in a 5-member team to integrate AI logic with game mechanics.",
     details: `Tech: Python, Pymunk, Pyglet, Reinforcement Learning (Q-learning), Game Development`,
@@ -138,8 +153,8 @@ export const projects = [
     demoVideo: "#",
     githubLink: "#",
   },
-      {
-    id: 7,
+  {
+    id: 8,
     title: "Suika AI (AI-Powered Puzzle Game) (March '25)",
     des: "Developed an automated version of the Suika Game (Japanese puzzle) using reinforcement learning (Q-learning) to optimize fruit-merging strategies. Engineered physics-based interactions (Pymunk) for realistic collisions and gravity simulation, and built a dynamic GUI (Pyglet) with real-time previews and score tracking. Collaborated in a 5-member team to integrate AI logic with game mechanics.",
     details: `Tech: Python, Pymunk, Pyglet, Reinforcement Learning (Q-learning), Game Development`,
